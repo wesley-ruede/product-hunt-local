@@ -146,7 +146,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media') #added static root
 #created base.html in core producthunt dir
 #adjusted home.html and base.html
 #adjusted settings - TEMPLATES 'DIRS'
-#adjusted base.html 
+#adjusted base.html
 #runserver success
 #import bootstrap base.html
 #removed main class base.html
@@ -169,7 +169,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media') #added static root
 #forwarded products urls -- products
 #defined urls -- products
 #defined view -- products
-#created create.html -- products 
+#created create.html -- products
 #updated create.html -- products
 #updated view create function -- products
 #updated static files -- urls.py
@@ -178,3 +178,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media') #added static root
 #defined detail views -- products
 #created detail.html -- products
 #styled detail.html -- products
+
+try:
+    from local_settings.py import *
+except ImportError:
+    pass
